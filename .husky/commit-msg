@@ -1,1 +1,5 @@
+echo "--- Commit Msg Hook ---"
+
+echo "💅 Linting commit..."
+
 npx --no -- commitlint --edit ${1}
