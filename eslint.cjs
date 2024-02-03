@@ -171,7 +171,7 @@ module.exports = {
 			{ svg: 'always', json: 'always', utils: 'always', theme: 'always' }
 		],
 		'unused-imports/no-unused-imports': 'error',
-		'@typescript-eslint/array-type': 'warn'
+		'@typescript-eslint/array-type': 'off'
 		// ESLINT from 8.53 and also typescript-eslint deprecated stylistic rules (they are already disabled in prettier). If you want to add theme use the @stylestic/eslint-plugin
 	},
 	overrides: [

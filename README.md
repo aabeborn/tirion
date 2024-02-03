@@ -17,6 +17,13 @@ First add to your `.npmrc` file the npm registry where package is published:
 @aabeborn:registry='https://npm.pkg.github.com'
 ```
 
+For bun add to `bunfig.toml`:
+
+```toml
+[install.scopes]
+"@aabeborn" = { token = "$GITHUB_TOKEN", url = "https://npm.pkg.github.com" }
+```
+
 Then install it by running one of the following commands:
 
 ```bash
