@@ -1,6 +1,16 @@
 {
 	"name": "@aabeborn/tirion",
 	"type": "module",
+	"files": [
+		"package.json",
+		"README.md",
+		"eslint.cjs",
+		"prettier.js"
+	],
+	"exports": {
+		"eslint": "./eslint.cjs",
+		"prettier": "./prettier.js"
+	},
 	"scripts": {
 		"commit": "cz",
 		"format": "prettier --write .",
