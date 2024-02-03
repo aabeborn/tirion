@@ -38,3 +38,20 @@ return {
 	...config
 }
 ```
+
+### Setup Eslint
+
+To setup eslint add the following lines to your `.eslintrc.js` or `.eslintrc.cjs` in `type:module` repos:
+
+```js
+const config = require('@aabeborn/tirion/eslint')
+
+module.exports = {
+	root: true,
+	...config
+}
+```
+
+## License
+
+MIT
