@@ -1,0 +1,31 @@
+name: 'Publish package'
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+permissions:
+    contents: read
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            issues: write
+            pull-requests: write
+            id-token: write
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+            - name: Add Bun
+              uses: oven-sh/setup-bun@v1
+            - name: Install dependencies
+              run: bun install --frozen-lockfile
+            - name: Publish package
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: bunx semantic-release
