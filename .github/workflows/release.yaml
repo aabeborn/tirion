@@ -20,6 +20,10 @@ jobs:
               uses: actions/checkout@v4
               with:
                   fetch-depth: 0
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: latest
             - name: Add Bun
               uses: oven-sh/setup-bun@v1
             - name: Install dependencies
