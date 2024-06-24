@@ -28,7 +28,7 @@ jobs:
                   registry-url: 'https://npm.pkg.github.com'
                   scope: '@aabeborn'
             - name: Add Bun
-              uses: oven-sh/setup-bun@v1
+              uses: oven-sh/setup-bun@v2
               with:
                   registry-url: 'https://npm.pkg.github.com'
                   scope: '@aabeborn'
