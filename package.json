@@ -40,8 +40,8 @@
 	},
 	"dependencies": {
 		"@rushstack/eslint-patch": "^1.7.2",
-		"@typescript-eslint/eslint-plugin": "^6.20.0",
-		"@typescript-eslint/parser": "^6.20.0",
+		"@typescript-eslint/eslint-plugin": "^8.0.0",
+		"@typescript-eslint/parser": "^8.0.0",
 		"eslint-config-next": "^14.1.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-config-turbo": "^1.12.2",
